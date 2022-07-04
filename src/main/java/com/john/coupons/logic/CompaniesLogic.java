@@ -23,7 +23,6 @@ public class CompaniesLogic {
 	public Company createCompany(Company company) {
 		CompanyEntity companyEntity = new CompanyEntity(company);
 		companyEntity = companiesRepository.save(companyEntity);
-		System.out.println(company);
 		return new Company(companyEntity);
 	}
 
